@@ -13,12 +13,19 @@ You need to install pip3 on your system
 ##### activate virtuelenv (if needed)
 
 ```source path_to_virtual_envs_location/environment_name/bin/activate```
+#### install dependences pip
+
+```pip3 install -r requirements.txt```
+
+
+
 #### install dependences
 
 ```pip3 install -r requirements.txt```
 In case you have cuda installed and configured, just replace tensorflow package with tensorflow-gpu:
 
 ```pip3 install -r requirements_gpu.txt```
+
 #### Jupyter kernel generation
 After having sourced the environment:
 
@@ -45,11 +52,19 @@ It is recommended to run everything on an environment
 
 ```pip install virtualenv```
 
-#### Create virtualenv
+#### Create virtualenv pip
 
 ```virtualenv path_to_virtual_envs_location/environment_name```
 
-#### Activate virtualenv
+
+#### Create virtualenv conda
+
+```conda create -n environment_name```
+
+And in order to activate the virtualenv:
+```conda activate environment_name```
+
+#### Activate virtualenv pip
 This is why we enabled the script execution for the current user.
 If we are using cmd, just run this command
 
