@@ -1,94 +1,107 @@
-# Software instalation and previous steps
+# Deep Learning Foundations – Hands-On Course
 
-## Linux machines (ubuntu)
-You need to install pip3 on your system
+This repository contains a complete, low-level deep learning course built from scratch. It is designed to help learners truly understand the foundational concepts of deep learning through hands-on experimentation and minimal abstraction.
 
-```sudo apt install python3-pip```
-#### Instal virtualenv
+## 🚀 What is this about?
 
-```pip3 install virtualenv```
-#### Create environment
+- Emphasis on **foundational understanding** with low-level code
+- Carefully structured practicals and exercises
+- Covers all critical topics in a typical DL curriculum
+- Ideal for learners transitioning from traditional ML to DL
 
-```virtualenv path_to_virtual_envs_location/environment_name```
-##### activate virtuelenv (if needed)
+---
 
-```source path_to_virtual_envs_location/environment_name/bin/activate```
-#### install dependences pip
+## 📁 Repository Structure
 
-```pip3 install -r requirements.txt```
+- **Complete/** — Instructor notebooks with full solutions and explanations.
+- **Training/** — Student notebooks with exercises and suggestions for practice.
+- **data/** — Datasets used in the assignments (e.g., `heart.csv`).
+- **models/** — Saved models and related files.
+- **Theory/** - Theoretical material, slides, or markdown notes 
+- `requirements.txt`, `requirements_windows.txt` — Python dependencies for Linux/Mac and Windows.
+- `README.md` — This file.
 
+Please note each pair of notebooks on **Training** and **Complete** covers the same topic, so learners can practice and later consult the full solution.
 
+## 📚 Topics Covered
 
-#### install dependences
+- Neural networks vs traditional ML (MNIST, CIFAR-10)
+- Activation functions
+- Optimization algorithms (SGD, Adam, etc.)
+- Learning rate strategies
+- TensorBoard usage (basics and advanced)
+- Model regularization
+- Hyperparameter tuning
+- PyTorch basics and integration
+- Practical classification examples (binary, fashion)
 
-```pip3 install -r requirements.txt```
-In case you have cuda installed and configured, just replace tensorflow package with tensorflow-gpu:
+## 🧠 Intended Audience
 
-```pip3 install -r requirements_gpu.txt```
+This course is ideal for:
+- Learners with some ML background who want to dive into DL
+- Self-taught developers looking for hands-on content
+- Educators searching for structured, editable content to use in class
 
-#### Jupyter kernel generation
-After having sourced the environment:
+---
 
-```ipython kernel install --user --name=environment_name```
+## 🛠️ Setup Instructions (a bit old. Would work better on newer versioons of the software)
 
+### Linux (Ubuntu)
+```bash
+sudo apt install python3-pip
+pip3 install virtualenv
+virtualenv env_dl_course
+source env_dl_course/bin/activate
+pip install -r requirements.txt
+# For GPU support
+pip install -r requirements_gpu.txt
+ipython kernel install --user --name=env_dl_course
+```
 
-## Windows machines
+### Windows
 
-First of all, it is required to have a python v 3.6.8 with 64 bits. It can be obtained from [here](https://www.python.org/downloads/windows/).
-Probably another pthon versions would work, but 3.8+ has proven to have an issue with pip and tensorflow.
+1. Install **Python 3.6.8 (64-bit)** from [python.org](https://www.python.org/downloads/windows/)
+2. Enable script execution for PowerShell (if needed):
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+```
 
-This version includes pip, so it is not necessary to install it.
+---
 
-### Scripts enabling
-By default, Powershell does not enable you to execute scripts. So, It is necessary t enable them. 
+#### Create and activate environment
 
-This command will do, according to [this thread](https://docs.microsoft.com/es-es/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-6)
+```bash
+pip install virtualenv
+virtualenv env_dl_course
+# CMD
+.\env_dl_course\Scriptsctivate.bat
+# PowerShell
+.\env_dl_course\Scriptsctivate.ps1
+```
 
-```Set-ExecutionPolicy -ExecutionPolicy  	Unrestricted-Scope CurrentUser```
+Install requirements:
+```bash
+pip install -r requirements_windows.txt
+pip install notebook
+```
 
-# Environment creation and activation
+For Torch (CPU):
+```bash
+pip install torch==1.3.1+cpu torchvision==0.4.2+cpu -f https://download.pytorch.org/whl/torch_stable.html
+```
 
-It is recommended to run everything on an environment
+Register the Jupyter kernel:
+```bash
+ipython kernel install --user --name=env_dl_course
+```
+---
 
-```pip install virtualenv```
+## 📬 Contact
 
-#### Create virtualenv pip
+For questions, collaborations, or feedback, feel free to reach out:
 
-```virtualenv path_to_virtual_envs_location/environment_name```
+📧 Email: fermaat.vl@gmail.com
+🧑‍💻 GitHub: [@fermaat](https://github.com/fermaat)
+🌐 [Website](https://fermaat.github.io)
 
-
-#### Create virtualenv conda
-
-```conda create -n environment_name```
-
-And in order to activate the virtualenv:
-```conda activate environment_name```
-
-#### Activate virtualenv pip
-This is why we enabled the script execution for the current user.
-If we are using cmd, just run this command
-
-```./path_to_virtual_envs_location/environment_name/Scripts/activate.bat```
-If we are using powershell, 
-
-```./path_to_virtual_envs_location/environment_name/Scripts/activate.ps1```
-
-### Install requirements
-Now we are sourcing our created environment. Just install the requirements:
-
-```pip install -r requirements_windows.txt```
-
-#### Notebook installation
-Although it should be contained on the requirements, it is a complete different requirement than on ubuntu. So, it is needed to run this line:
-```pip install notebook```
-
-#### Torch
-If you want also to install torch, you need to run this line (only for cpu)
-
-```pip install torch==1.3.1+cpu torchvision==0.4.2+cpu -f https://download.pytorch.org/whl/torch_stable.html```
-
-### Jupyter kernel generation
-After having sourced the environment: 
-
-```ipython kernel install --user --name=environment_name```
 
