@@ -1,6 +1,10 @@
 # Deep Learning Foundations – Hands-On Course
 
-This repository contains a complete, low-level deep learning course built from scratch. It is designed to help learners truly understand the foundational concepts of deep learning through hands-on experimentation and minimal abstraction.
+This repository contains a complete, low-level deep learning course I personally designed and developed from scratch. It combines theory, practice, and guided solutions for building a deep understanding of deep learning fundamentals. It is designed to help learners truly understand the foundational concepts of deep learning through hands-on experimentation and minimal abstraction.
+
+
+> 💡 This material was inspired by a course I developed while collaborating with a private educational institution ([AFI]()). The structure and content have been adapted for open access and personal use.
+
 
 ## 🚀 What is this about?
 
@@ -17,11 +21,12 @@ This repository contains a complete, low-level deep learning course built from s
 - **Training/** — Student notebooks with exercises and suggestions for practice.
 - **data/** — Datasets used in the assignments (e.g., `heart.csv`).
 - **models/** — Saved models and related files.
-- **Theory/** - Theoretical material, slides, or markdown notes 
 - `requirements.txt`, `requirements_windows.txt` — Python dependencies for Linux/Mac and Windows.
 - `README.md` — This file.
 
-Please note each pair of notebooks on **Training** and **Complete** covers the same topic, so learners can practice and later consult the full solution.
+Please note each pair of notebooks on **Training** and **Complete** covers the same topic, so learners can practice and later consult the full solution. 
+
+Additional note: theory slides are not included for licensing reasons.
 
 ## 📚 Topics Covered
 
