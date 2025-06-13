@@ -3,7 +3,7 @@
 This repository contains a complete, low-level deep learning course I personally designed and developed from scratch. It combines theory, practice, and guided solutions for building a deep understanding of deep learning fundamentals. It is designed to help learners truly understand the foundational concepts of deep learning through hands-on experimentation and minimal abstraction.
 
 
-> 💡 This material was inspired by a course I developed while collaborating with a private educational institution ([AFI]()). The structure and content have been adapted for open access and personal use.
+> 💡 This material was inspired by a course I developed while collaborating with a private educational institution ([AFI](https://www.afiglobaleducation.com)). The structure and content have been adapted for open access and personal use.
 
 
 ## 🚀 What is this about?
